@@ -5,9 +5,9 @@ import { Component } from "@angular/core";
   template: `
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center" class="content">
-      <h1>Welcome to {{ title }}!</h1>
-      <span style="display: block">{{ title }} app is running!</span>
+      <h1>Declarative router guard PoC</h1>
     </div>
+    <h4>State of guard: {{ guarded }}</h4>
     <nav>
       <ul>
         <li><a linkTo="/">Home</a></li>
@@ -31,7 +31,6 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   guarded = false;
-  title = "declarative-router-guards";
 
   toggleGuarded(): void {
     this.guarded = !this.guarded;
