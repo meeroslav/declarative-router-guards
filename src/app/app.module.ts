@@ -4,15 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GuardedComponent } from './guarded/guarded.component';
+import { RoutingModule } from 'angular-routing';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GuardedComponent
+    GuardedComponent,
+    NotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
