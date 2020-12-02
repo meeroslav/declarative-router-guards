@@ -1,0 +1,8 @@
+[build]
+  command = "ng build --prod"
+  publish = "dist/declarative-router-guards"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
