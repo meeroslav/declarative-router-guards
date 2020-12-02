@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-not-found',
   template: `
     <p>
-      The path you are looking for was not found 🔍 or
+      The path you are looking for was not found 🔍
+      <br/>or<br/>
       you don't have access rights ✋
     </p>
   `,

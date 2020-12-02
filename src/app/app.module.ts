@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { GuardedComponent } from './guarded/guarded.component';
 import { RoutingModule } from 'angular-routing';
 import { NotFoundComponent } from './not-found/not-found.component';
-
 @NgModule({
   declarations: [
     AppComponent,
