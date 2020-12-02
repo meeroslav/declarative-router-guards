@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
     <p>
-      home works!
+      This is UNGUARDED 🔓 home component!
     </p>
   `,
   styles: [

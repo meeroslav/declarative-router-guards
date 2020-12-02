@@ -5,14 +5,14 @@ import { Component } from "@angular/core";
   template: `
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center" class="content">
-      <h1>Declarative router guard PoC</h1>
+      <h1>Declarative router restrictions</h1>
     </div>
-    <h4>State of guard: {{ guarded }}</h4>
+    <h4>State of restriction: {{ guarded }}</h4>
     <nav>
       <ul>
         <li><a linkTo="/">Home</a></li>
-        <li><a linkTo="/guarded">Guarded</a></li>
-        <li><button (click)="toggleGuarded()">Toggle guarded</button></li>
+        <li><a linkTo="/guarded">Restricted</a></li>
+        <li><button (click)="toggleRestriction()">Toggle restriction</button></li>
       </ul>
     </nav>
     <router>
@@ -32,7 +32,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   guarded = false;
 
-  toggleGuarded(): void {
+  toggleRestriction(): void {
     this.guarded = !this.guarded;
   }
 }

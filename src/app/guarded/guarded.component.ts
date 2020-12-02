@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-guarded',
   template: `
     <p>
-      guarded works!
+      I am a locked 🔐 component!
     </p>
   `,
   styles: [
