@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GuardedComponent } from './guarded/guarded.component';
-import { RoutingModule } from 'angular-routing';
+import { ComponentRouterModule } from '@angular-component/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    RoutingModule.forRoot()
+    ComponentRouterModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
